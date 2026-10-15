@@ -1,11 +1,67 @@
+:root {
+
+
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background-image:url(photo/code.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*small*/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/*medium*/
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/*large*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*end global rules*/
+
 #my-icon {
   border-radius: 50%;
+  border: 2px solid grey;
 }
 #my {
-    width: 90%;
-    color:white;
+    width: 100%;
+    color:#F8FAFC;
     border: 1px solid black;
-    background-color:rgba(17, 17, 219, 0.858);
+    background-color:#151D35;
     padding: 10px;
 }
 
@@ -15,22 +71,24 @@
 }
 
 main{
-    background-color:white;
+    background-color:#F3F4F6;
     border: 2px solid grey;
     margin: 20px;
     border-radius: 10px;
     padding: 20px;
 }
 
-#about{
+#aboutme {
     width: 90%;
     background-color: rgba(44, 134, 164, 0.793);
     padding: 15px;
     margin-top: 20px;
     border-radius: 25px;
 }
-
-#about p{
+#aboutme h2 {
+    color: #6366F1;
+}
+#aboutme p{
     font-size: 20px;
     margin: 0;
     color:whitesmoke;
