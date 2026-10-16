@@ -1,4 +1,8 @@
 :root {
+  --text-color: #1f2937;
+  --back-color1: #c9e1f1;
+  --back-color2: #bae9de;
+  --main-text-color: #0f766e;
 }
 
 * {
@@ -51,10 +55,10 @@ body {
 }
 
 /*end global rules*/
-
+/*start header*/
 #my-icon {
   border-radius: 50%;
-  border: 2px solid grey;
+  border: 2px solid rgba(128, 128, 128, 0.115);
 }
 #my {
   width: 100%;
@@ -62,82 +66,122 @@ body {
   border: 1px solid black;
   background-color: #151d35;
   padding: 10px;
-}
-#my a {
-  color: #f8fafc;
-  text-decoration: none;
-  margin-right: 10px;
-}
-#my p {
-  font-size: 20px;
-  margin: 0;
+  border-radius: 10px;
+  a {
+    color: #f8fafc;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  p {
+    font-size: 20px;
+    margin: 0;
+  }
 }
 
+/*end header*/
+/*start about me*/
 main {
   background-color: #f3f4f6;
-  border: 2px solid grey;
+  border: 3px solid rgba(128, 128, 128, 0.509);
   margin: 20px;
   border-radius: 10px;
   padding: 20px;
 }
-
 #aboutme {
-  width: 90%;
-  background-color: rgba(44, 134, 164, 0.793);
+  background-color: var(--back-color1);
   padding: 15px;
   margin-top: 20px;
   border-radius: 25px;
+
+  h2 {
+    color: var(--main-text-color);
+  }
+  p {
+    font-size: 20px;
+    margin: 0;
+    color: var(--text-color);
+  }
 }
-#aboutme h2 {
-  color: #6366f1;
-}
-#aboutme p {
-  font-size: 20px;
-  margin: 0;
-  color: whitesmoke;
+/*end about me*/
+/*start project*/
+#project {
+  background-color: var(--back-color2);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 25px;
+  h2 {
+    color: var(--main-text-color);
+  }
+  p {
+    font-size: 20px;
+    margin: 0;
+    color: var(--text-color);
+  }
 }
 
+/*end project*/
+/*start skills*/
 #skills {
-  width: 90%;
-  background-color: rgba(0, 128, 128, 0.511);
+  background-color: var(--back-color1);
   padding: 15px;
   border-radius: 25px;
   margin-top: 20px;
+  h2 {
+    color: var(--main-text-color);
+  }
+  p {
+    font-size: 20px;
+    margin: 5px 0 15px 0;
+    color: var(--text-color);
+  }
+  span {
+    display: inline-block;
+    border: 1px solid #115e59;
+    background-color: var(--main-text-color);
+    color: white;
+    border-radius: 8px;
+    margin: 5px;
+    font-weight: bold;
+    padding: 6px 12px;
+  }
 }
 
-#skills p {
-  font-size: 20px;
-  margin: 5px 0 15px 0;
-  color: whitesmoke;
-}
-
-#skills span {
-  border: 2px solid black;
-  background-color: aqua;
-  border-radius: 50%;
-  margin: 20px;
-  font-weight: bold;
-  padding: 5px;
-}
-
+/*end skills*/
+/*start contact*/
 #contact {
-  width: 90%;
-  background-color: beige;
+  background-color: var(--back-color2);
   padding: 15px;
   border-radius: 25px;
   margin-top: 20px;
+  h2 {
+    color: var(--main-text-color);
+  }
+  p {
+    font-size: 20px;
+    color: var(--text-color);
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  ul > li a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
 }
 
-#contact p {
-  font-size: 20px;
-  color: thistle;
+/*end contact*/
+/*start footer*/
+footer {
+  text-align: center;
+  color: #f8fafc;
+  border: 1px solid black;
+  background-color: #151d35;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  p {
+    margin: 5px 0;
+  }
 }
-
-#contact ul {
-  list-style: none;
-}
-
-#contact ul > li a {
-  text-decoration: none;
-  color: black;
-}
+/*end footer*/
