@@ -216,9 +216,29 @@ main {
 }
 
 /*end skills*/
+/*start certfication*/
+#certi {
+  background-color: var(--back-color2);
+  padding: 15px;
+  border-radius: 25px;
+  margin-top: 20px;
+  h2 {
+    color: var(--main-text-color);
+  }
+  p {
+    font-size: 20px;
+    color: var(--text-color);
+  }
+  a{
+    text-decoration: none;
+    color: var(--text-color);
+  }
+}
+
+/*end certfication*/
 /*start contact*/
 #contact {
-  background-color: var(--back-color2);
+  background-color: var(--back-color1);
   padding: 15px;
   border-radius: 25px;
   margin-top: 20px;
