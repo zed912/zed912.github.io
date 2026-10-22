@@ -16,7 +16,7 @@ body {
   font-family: "Work Sans", sans-serif;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(photo/code.jpeg);
+    url(../photo/code.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
