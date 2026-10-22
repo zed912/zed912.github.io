@@ -237,30 +237,115 @@ main {
 
 /*end certfication*/
 /*start contact*/
+/*start contact*/
 #contact {
   background-color: var(--back-color1);
   padding: 15px;
   border-radius: 25px;
   margin-top: 20px;
+
   h2 {
     color: var(--main-text-color);
   }
+
   p {
     font-size: 20px;
     color: var(--text-color);
   }
-  ul {
+
+  .social-links {
     list-style: none;
+    margin: 20px 0 0;
     padding: 0;
-    li a {
-      text-decoration: none;
-      color: var(--text-color);
-      font-size: 16px;
-      margin-bottom: 8px;
+
+    li {
+      margin: 0;
+      padding: 0;
+
+      a {
+        display: flex;
+        align-items: center;
+        direction: ltr;
+
+        width: 60px;
+        max-width: 100%;
+        height: 60px;
+        padding: 0;
+
+        overflow: hidden;
+        white-space: nowrap;
+
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid rgb(0 0 0 / 15%);
+        box-shadow: 3px 3px 8px rgb(0 0 0 / 20%);
+
+        transition: width 0.35s ease;
+
+        i {
+          flex: 0 0 60px;
+          text-align: center;
+          font-size: 28px;
+        }
+
+        span {
+          padding-right: 20px;
+          font-size: 17px;
+          font-weight: 700;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+
+          opacity: 0;
+          transform: translateX(-8px);
+
+          transition:
+            opacity 0.25s ease,
+            transform 0.35s ease;
+        }
+
+        &:hover,
+        &:focus-visible {
+          width: 220px;
+
+          span {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        &:focus-visible {
+          outline: 2px solid white;
+          outline-offset: -4px;
+        }
+
+        &.email {
+          background-color: #d44638;
+        }
+
+        &.linkedin {
+          background-color: #0a66c2;
+        }
+
+        &.phone {
+          background-color: #198754;
+        }
+
+        &.github {
+          background-color: #333333;
+        }
+
+        @media (hover: none) {
+          width: 220px;
+
+          span {
+            opacity: 1;
+            transform: none;
+          }
+        }
+      }
     }
   }
 }
-
 /*end contact*/
 /*start arrow*/
 .arrow i {
