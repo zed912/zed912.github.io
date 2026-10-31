@@ -1,0 +1,189 @@
+.scene {
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  width: 260px;
+  height: 260px;
+  position: relative;
+  background-color: #171717;
+  .orbit {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -80px;
+    margin-left: -80px;
+    animation-name: spin;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    .sun {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      top: 50%;
+      left: 75%;
+      margin-top: -80px;
+      margin-left: -80px;
+
+      .ray {
+        display: block;
+        width: 6px;
+        height: 45px;
+        background-color: #facc15;
+        border-radius: 3px;
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        margin-left: -3px;
+        transform-origin: center bottom;
+        box-shadow: 0 0 10px #facc15;
+        &:nth-child(1) {
+          transform: rotate(0deg);
+        }
+        &:nth-child(2) {
+          transform: rotate(45deg);
+        }
+        &:nth-child(3) {
+          transform: rotate(90deg);
+        }
+        &:nth-child(4) {
+          transform: rotate(135deg);
+        }
+        &:nth-child(5) {
+          transform: rotate(180deg);
+        }
+        &:nth-child(6) {
+          transform: rotate(225deg);
+        }
+        &:nth-child(7) {
+          transform: rotate(270deg);
+        }
+        &:nth-child(8) {
+          transform: rotate(315deg);
+        }
+        &:nth-child(even) {
+          background-color: red;
+          box-shadow: 0 0 10px red;
+        }
+      }
+    }
+  }
+  .core {
+    width: 12px;
+    height: 12px;
+    background-color: rgb(250, 204, 21, 90%);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow:
+      0 0 8px #facc15,
+      0 0 18px #facc15;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(2);
+  }
+}
+
+.cubiod {
+  width: 260px;
+  height: 260px;
+  background-color: #171717;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 400px;
+  h1 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+  }
+  .cube {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-35.264deg) rotateY(45deg);
+    animation-name: cubespin;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    .face {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 2px solid #22d3ee;
+      border-radius: 6px;
+      background-color: rgba(34, 211, 238, 0.15);
+      box-sizing: border-box;
+      &.front {
+        transform: translateZ(24px);
+      }
+      &.back {
+        transform: rotateY(180deg) translateZ(24px);
+        border-color: #facc15;
+      }
+      &.right {
+        transform: rotateY(90deg) translateZ(24px);
+        border-color: #22c55e;
+      }
+      &.left {
+        transform: rotateY(-90deg) translateZ(24px);
+        border-color: #f472b6;
+      }
+      &.top {
+        transform: rotateX(90deg) translateZ(24px);
+        border-color: #fb923c;
+      }
+      &.bottom {
+        transform: rotateX(-90deg) translateZ(24px);
+        border-color: #a78bfa;
+      }
+    }
+  }
+}
+
+@keyframes cubespin {
+  from {
+    transform: rotateX(-35.264deg) rotateY(45deg);
+  }
+  to {
+    transform: rotateX(324.736deg) rotateY(405deg);
+  }
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+}
