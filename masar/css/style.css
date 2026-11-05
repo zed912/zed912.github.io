@@ -32,12 +32,23 @@ body {
   .container {
     width: 970px;
   }
+  .courses{
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
 }
 
 /* Large */
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
+}
+@media(max-width:600px){
+   .courses{
+    grid-template-columns: 1fr;
+  }
+  .courses .head h2 {
+    font-size: 26px;
   }
 }
 
@@ -253,6 +264,7 @@ header {
   width: auto;
   gap: 20px;
   padding: 30px 20px;
+  margin-bottom: 80px;
   .state {
     h2 {
       width: 250.4px;
@@ -277,9 +289,37 @@ header {
 /* start courses */
 .courses {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  padding: 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  padding:100px 20px 80px;
+  .head {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 55px;
+
+    span {
+      display: inline-block;
+      background-color: #eef2ff;
+      color: var(--main-color);
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #171b2b;
+      margin: 15px 0 8px;
+    }
+
+    p {
+      font-size: 14px;
+      color: var(--text-color);
+      margin: 0;
+    }
+  }
   .cards {
     display: flex;
     flex-direction: column;
@@ -294,7 +334,7 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: var(#eef2ff);
+      background-color: #eef2ff;
       border-radius: 16px;
       font-size: 25px;
       margin: 0 0 20px;
@@ -314,7 +354,6 @@ header {
       height: auto;
       overflow-wrap: break-word;
       margin: 0 0 20px;
-
     }
     .fotter {
       display: flex;
