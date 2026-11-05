@@ -243,3 +243,34 @@ header {
     }
   }
 }
+
+/*start status*/
+.status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  gap: 20px;
+  padding: 30px 20px;
+  .state {
+    h2 {
+      width: 250.4px;
+      height: 41px;
+      color: var(--main-color);
+      margin: 0;
+      font-weight: 700;
+      line-height: 40.8px;
+      font-size: 24px;
+    }
+    p {
+      margin: 0;
+      color: var(--text-color);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 23.8px;
+    }
+  }
+}
+/*end status*/
+
