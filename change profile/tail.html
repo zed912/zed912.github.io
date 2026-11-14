@@ -17,7 +17,9 @@
     </style>
   </head>
 
-  <body class="bg-[#f8fafc] text-[#0b1220] dark:bg-[#0b1220] dark:text-[#e5edf7]">
+  <body
+    class="bg-[#f8fafc] text-[#0b1220] dark:bg-[#0b1220] dark:text-[#e5edf7]"
+  >
     <!-- ================= HEADER ================= -->
     <header
       class="sticky top-0 z-10 bg-[#f8fafc] dark:bg-[#0b1220] border-b border-[#e2e8f0] dark:border-[#1f2a44]"
@@ -65,27 +67,48 @@
 
     <main>
       <!-- ================= HERO ================= -->
-      <section class="hero bg-" id="top">
-        <div class="container hero-inner">
-          <div class="hero-content">
-            <p class="status-badge">
-              <span class="status-dot"></span>
+      <section class="py-16" id="top">
+        <div
+          class="w-full max-w-[1080px]mx-auto px-6 flex flex-col items-center gap-10 text-center"
+        >
+          <div class="flex flex-col items-center gap-5 max-w-[560px]">
+            <p
+              class="inline-flex items-center gap-2 px-3 py-1.5 text-[13px] font-medium text-[#64748b] dark:text-[#94a3b8] bg-white dark:bg-[#111a2e] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+            >
+              <span class="w-2 h-2 shrink-0 rounded-full bg-[#22c55e]"></span>
               Available for work
             </p>
 
-            <h1 class="hero-title">
-              Hi, I'm <span class="accent">Maged Yaseen</span> —<br />
+            <h1
+              class="text-[32px] leading-[1.2] font-extrabold tracking-[-0.02em]"
+            >
+              Hi, I'm
+              <span class="text-[#6366f1] dark:text-[#818cf8]"
+                >Maged Yaseen</span
+              >
+              —<br />
               I build clean, accessible interfaces.
             </h1>
 
-            <p class="hero-text">
+            <p
+              class="text-base leading-[1.6] text-[#64748b] dark:text-[#94a3b8]"
+            >
               Frontend developer in progress. I turn designs into
               pixel-accurate, responsive pages using HTML, CSS, and Tailwind.
             </p>
 
-            <div class="hero-actions">
-              <a href="#projects" class="btn btn--primary">View my work</a>
-              <a href="#" class="btn btn--ghost">Download CV</a>
+            <div class="flex flex-wrap justify-center gap-3">
+              <a
+                href="#projects"
+                class="inline-flex items-center px-[22px] py-3 text-sm leading-[1.6] font-semibold border border-transparent rounded-[10px] bg-[#6366f1] text-white hover:bg-[#4f46e5] dark:bg-[#818cf8] dark:text-[#0b1220] dark:hover:bg-[#a5b4fc] transition-colors duration-150"
+                >View my work</a
+              >
+
+              <a
+                href="#"
+                class="inline-flex items-center px-[22px] py-3 text-sm leading-[1.6] font-semibold border border-[#e2e8f0] rounded-[10px] bg-white text-[#0f172a] hover:border-[#6366f1] dark:bg-[#111a2e] dark:text-[#e5edf7] dark:border-[#1f2a44] dark:hover:border-[#818cf8] transition-colors duration-150"
+                >Download CV</a
+              >
             </div>
           </div>
 
@@ -93,40 +116,58 @@
             <img
               src="assets/imgs/maged.png"
               alt="Maged Yaseen"
-              class="avatar-img"
+              class="w-[200px] h-[200px] object-cover rounded-full border-4 border-white dark:border-[#111a2e] shadow-[0_8px_24px_rgba(15,23,42,0.10)] dark:shadow-[0_12px_32px_rgba(0,0,0,0.50)]"
             />
           </div>
         </div>
       </section>
 
       <!-- ================= ABOUT ================= -->
-      <section class="section" id="about">
-        <div class="container">
-          <h2 class="section-title">About</h2>
-          <p class="section-subtitle">
+      <section class="py-16" id="about">
+        <div class="w-full max-w-[1080px] mx-auto px-6">
+          <h2 class="text-2xl font-bold tracking-[-0.02em] mb-2">About</h2>
+          <p class="text-[#64748b] dark:text-[#94a3b8] mb-8">
             A short intro — written in my own words.
           </p>
 
-          <div class="about-grid">
-            <p class="about-text">
+          <div class="flex flex-col md:flex-row gap-8">
+            <p class="flex-1 leading-[1.6] text-[#64748b] dark:text-[#94a3b8]">
               I'm a self-taught frontend developer based in Alexandria. I fell
               in love with the web when I realized a few lines of code could
               become something people actually use. Right now I'm sharpening my
               HTML, CSS, and Tailwind skills — one project at a time.
             </p>
 
-            <ul class="facts">
-              <li class="fact">
-                <span class="fact-label">Based in</span>
-                <span class="fact-value">Alexandria, Egypt</span>
+            <ul class="flex-1 flex flex-col gap-3">
+              <li
+                class="flex items-center justify-between gap-4 p-4 rounded-[10px] bg-white dark:bg-[#111a2e] border border-[#e2e8f0] dark:border-[#1f2a44]"
+              >
+                <span class="text-sm text-[#64748b] dark:text-[#94a3b8]"
+                  >Based in</span
+                >
+                <span class="text-sm font-semibold text-right"
+                  >Alexandria, Egypt</span
+                >
               </li>
-              <li class="fact">
-                <span class="fact-label">Focus</span>
-                <span class="fact-value">HTML · CSS · Tailwind</span>
+              <li
+                class="flex items-center justify-between gap-4 p-4 rounded-[10px] bg-white dark:bg-[#111a2e] border border-[#e2e8f0] dark:border-[#1f2a44]"
+              >
+                <span class="text-sm text-[#64748b] dark:text-[#94a3b8]"
+                  >Focus</span
+                >
+                <span class="text-sm font-semibold text-right"
+                  >HTML · CSS · Tailwind</span
+                >
               </li>
-              <li class="fact">
-                <span class="fact-label">Learning</span>
-                <span class="fact-value">JavaScript (soon)</span>
+              <li
+                class="flex items-center justify-between gap-4 p-4 rounded-[10px] bg-white dark:bg-[#111a2e] border border-[#e2e8f0] dark:border-[#1f2a44]"
+              >
+                <span class="text-sm text-[#64748b] dark:text-[#94a3b8]"
+                  >Learning</span
+                >
+                <span class="text-sm font-semibold text-right"
+                  >JavaScript (soon)</span
+                >
               </li>
             </ul>
           </div>
@@ -134,36 +175,92 @@
       </section>
 
       <!-- ================= SKILLS ================= -->
-      <section class="section" id="skills">
-        <div class="container">
-          <h2 class="section-title">Skills</h2>
-          <p class="section-subtitle">The tools I use every day.</p>
+      <section class="py-16" id="skills">
+        <div class="w-full max-w-[1080px] mx-auto px-6">
+          <h2 class="text-2xl font-bold tracking-[-0.02em] mb-2">Skills</h2>
+          <p class="text-[#64748b] dark:text-[#94a3b8] mb-8">
+            The tools I use every day.
+          </p>
 
-          <div class="skills-groups">
-            <div class="skills-group">
-              <h3 class="skills-title">Frontend</h3>
-              <ul class="badges">
-                <li class="badge">HTML5</li>
-                <li class="badge">CSS3</li>
-                <li class="badge">Tailwind CSS 4</li>
-                <li class="badge">Responsive Design</li>
+          <div class="flex flex-wrap gap-6">
+            <div
+              class="flex-[1_1_100%] md:flex-[1_1_calc((100%_-_48px)/3)] p-5 bg-white dark:bg-[#111a2e] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-[16px]"
+            >
+              <h3
+                class="text-xs font-semibold uppercase tracking-[0.08em] text-[#64748b] dark:text-[#94a3b8] mb-3"
+              >
+                Frontend
+              </h3>
+              <ul class="flex flex-wrap gap-2">
+                <li
+                  class="px-3 py-1.5 text-[13px] font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                >
+                  HTML5
+                </li>
+                <li
+                  class="px-3 py-1.5 text-[13px] font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                >
+                  CSS3
+                </li>
+                <li
+                  class="px-3 py-1.5 text-[13px] font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                >
+                  Tailwind CSS 4
+                </li>
+                <li
+                  class="px-3 py-1.5 text-[13px] font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                >
+                  Responsive Design
+                </li>
               </ul>
             </div>
 
-            <div class="skills-group">
-              <h3 class="skills-title">Tools</h3>
-              <ul class="badges">
-                <li class="badge">VS Code</li>
-                <li class="badge">Git &amp; GitHub</li>
-                <li class="badge">Figma</li>
+            <div
+              class="flex-[1_1_100%] md:flex-[1_1_calc((100%_-_48px)/3)] p-5 bg-white dark:bg-[#111a2e] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-[16px]"
+            >
+              <h3
+                class="text-xs font-semibold uppercase tracking-[0.08em] text-[#64748b] dark:text-[#94a3b8] mb-3"
+              >
+                Tools
+              </h3>
+              <ul class="flex flex-wrap gap-2">
+                <li
+                  class="px-3 py-1.5 text-[13px] font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                >
+                  VS Code
+                </li>
+                <li
+                  class="px-3 py-1.5 text-[13px] font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                >
+                  Git &amp; GitHub
+                </li>
+                <li
+                  class="px-3 py-1.5 text-[13px] font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                >
+                  Figma
+                </li>
               </ul>
             </div>
 
-            <div class="skills-group">
-              <h3 class="skills-title">Learning</h3>
-              <ul class="badges">
-                <li class="badge">JavaScript</li>
-                <li class="badge">Accessibility</li>
+            <div
+              class="flex-[1_1_100%] md:flex-[1_1_calc((100%_-_48px)/3)] p-5 bg-white dark:bg-[#111a2e] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-[16px]"
+            >
+              <h3
+                class="text-xs font-semibold uppercase tracking-[0.08em] text-[#64748b] dark:text-[#94a3b8] mb-3"
+              >
+                Learning
+              </h3>
+              <ul class="flex flex-wrap gap-2">
+                <li
+                  class="px-3 py-1.5 text-[13px] font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                >
+                  JavaScript
+                </li>
+                <li
+                  class="px-3 py-1.5 text-[13px] font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                >
+                  Accessibility
+                </li>
               </ul>
             </div>
           </div>
@@ -171,176 +268,332 @@
       </section>
 
       <!-- ================= PROJECTS ================= -->
-      <section class="section" id="projects">
-        <div class="container">
-          <h2 class="section-title">Projects</h2>
-          <p class="section-subtitle">
+      <section class="py-16" id="projects">
+        <div class="w-full max-w-[1080px] mx-auto px-6">
+          <h2 class="text-2xl font-bold tracking-[-0.02em] mb-2">Projects</h2>
+          <p class="text-[#64748b] dark:text-[#94a3b8] mb-8">
             Selected work — filters will become functional later.
           </p>
 
-          <div class="filter-bar" role="tablist">
-            <button class="filter-btn is-active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="html-css">
+          <div class="flex flex-wrap gap-2 mb-6" role="tablist">
+            <button
+              class="is-active px-4 py-2 text-[13px] leading-[1.6] font-medium rounded-full border border-[#6366f1] bg-[#6366f1] text-white dark:border-[#818cf8] dark:bg-[#818cf8] dark:text-[#0b1220] cursor-pointer transition-colors duration-150"
+              data-filter="all"
+            >
+              All
+            </button>
+            <button
+              class="px-4 py-2 text-[13px] leading-[1.6] font-medium rounded-full border border-[#e2e8f0] bg-white text-[#64748b] hover:text-[#0f172a] hover:border-[#6366f1] dark:border-[#1f2a44] dark:bg-[#111a2e] dark:text-[#94a3b8] dark:hover:text-[#e5edf7] dark:hover:border-[#818cf8] cursor-pointer transition-colors duration-150"
+              data-filter="html-css"
+            >
               HTML &amp; CSS
             </button>
-            <button class="filter-btn" data-filter="tailwind">Tailwind</button>
-            <button class="filter-btn" data-filter="ui">UI</button>
+            <button
+              class="px-4 py-2 text-[13px] leading-[1.6] font-medium rounded-full border border-[#e2e8f0] bg-white text-[#64748b] hover:text-[#0f172a] hover:border-[#6366f1] dark:border-[#1f2a44] dark:bg-[#111a2e] dark:text-[#94a3b8] dark:hover:text-[#e5edf7] dark:hover:border-[#818cf8] cursor-pointer transition-colors duration-150"
+              data-filter="tailwind"
+            >
+              Tailwind
+            </button>
+            <button
+              class="px-4 py-2 text-[13px] leading-[1.6] font-medium rounded-full border border-[#e2e8f0] bg-white text-[#64748b] hover:text-[#0f172a] hover:border-[#6366f1] dark:border-[#1f2a44] dark:bg-[#111a2e] dark:text-[#94a3b8] dark:hover:text-[#e5edf7] dark:hover:border-[#818cf8] cursor-pointer transition-colors duration-150"
+              data-filter="ui"
+            >
+              UI
+            </button>
           </div>
 
-          <div class="projects-grid">
-            <article class="project-card" data-category="tailwind ui">
-              <div class="project-cover project-cover--indigo">
-                <div class="project-cover-logo project-cover--white">
+          <div class="flex flex-wrap gap-6">
+            <article
+              class="w-full sm:w-[calc((100%_-_24px)/2)] lg:w-[calc((100%_-_48px)/3)] bg-white dark:bg-[#111a2e] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-[16px] overflow-hidden hover:-translate-y-1 hover:border-[#6366f1] dark:hover:border-[#818cf8] hover:shadow-[0_8px_24px_rgba(15,23,42,0.10)] dark:hover:shadow-[0_12px_32px_rgba(0,0,0,0.50)] transition-[transform,box-shadow,border-color] duration-200"
+              data-category="tailwind ui"
+            >
+              <div
+                class="h-[140px] flex items-center justify-center bg-[linear-gradient(135deg,#6366f1,#8b5cf6)]"
+              >
+                <div
+                  class="flex items-center justify-center rounded-full overflow-hidden bg-white"
+                >
                   <img
                     src="assets/imgs/maged.png"
                     alt="Maged Yaseen"
-                    class="project-cover-img"
+                    class="w-[100px] h-[100px] object-cover"
                   />
                 </div>
               </div>
-              <div class="project-body">
-                <h3 class="project-title">Portfolio Website</h3>
-                <p class="project-desc">
+              <div class="p-5">
+                <h3 class="text-base font-bold mb-1.5">Portfolio Website</h3>
+                <p class="text-sm text-[#64748b] dark:text-[#94a3b8] mb-3">
                   A responsive personal portfolio built from scratch.
                 </p>
-                <ul class="project-tags">
-                  <li class="project-tag">HTML</li>
-                  <li class="project-tag">Tailwind</li>
+                <ul class="flex flex-wrap gap-1.5 mb-4">
+                  <li
+                    class="px-2.5 py-1 text-xs font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                  >
+                    HTML
+                  </li>
+                  <li
+                    class="px-2.5 py-1 text-xs font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                  >
+                    Tailwind
+                  </li>
                 </ul>
-                <div class="project-links">
-                  <a href="#" class="project-link">Live →</a>
-                  <a href="#" class="project-link">Code →</a>
+                <div class="flex gap-4">
+                  <a
+                    href="#"
+                    class="text-[13px] font-semibold text-[#6366f1] dark:text-[#818cf8] hover:text-[#4f46e5] dark:hover:text-[#a5b4fc] transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-[#6366f1] dark:focus-visible:outline-[#818cf8] focus-visible:rounded-[4px]"
+                    >Live →</a
+                  >
+                  <a
+                    href="#"
+                    class="text-[13px] font-semibold text-[#6366f1] dark:text-[#818cf8] hover:text-[#4f46e5] dark:hover:text-[#a5b4fc] transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-[#6366f1] dark:focus-visible:outline-[#818cf8] focus-visible:rounded-[4px]"
+                    >Code →</a
+                  >
                 </div>
               </div>
             </article>
 
-            <article class="project-card" data-category="html-css">
-              <div class="project-cover project-cover--amber">
-                <div class="project-cover-logo project-cover--white">
+            <article
+              class="w-full sm:w-[calc((100%_-_24px)/2)] lg:w-[calc((100%_-_48px)/3)] bg-white dark:bg-[#111a2e] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-[16px] overflow-hidden hover:-translate-y-1 hover:border-[#6366f1] dark:hover:border-[#818cf8] hover:shadow-[0_8px_24px_rgba(15,23,42,0.10)] dark:hover:shadow-[0_12px_32px_rgba(0,0,0,0.50)] transition-[transform,box-shadow,border-color] duration-200"
+              data-category="html-css"
+            >
+              <div
+                class="h-[140px] flex items-center justify-center bg-[linear-gradient(135deg,#f59e0b,#ef4444)]"
+              >
+                <div
+                  class="flex items-center justify-center rounded-full overflow-hidden bg-white"
+                >
                   <img
                     src="assets/imgs/masar-logo.png"
                     alt="Masar Training Center"
-                    class="project-cover-img"
+                    class="w-[100px] h-[100px] object-cover"
                   />
                 </div>
               </div>
-              <div class="project-body">
-                <h3 class="project-title">Masar Academy</h3>
-                <p class="project-desc">
+              <div class="p-5">
+                <h3 class="text-base font-bold mb-1.5">Masar Academy</h3>
+                <p class="text-sm text-[#64748b] dark:text-[#94a3b8] mb-3">
                   A website for Masar Training Center, a training center for
                   software engineering.
                 </p>
-                <ul class="project-tags">
-                  <li class="project-tag">HTML</li>
-                  <li class="project-tag">CSS</li>
+                <ul class="flex flex-wrap gap-1.5 mb-4">
+                  <li
+                    class="px-2.5 py-1 text-xs font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                  >
+                    HTML
+                  </li>
+                  <li
+                    class="px-2.5 py-1 text-xs font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                  >
+                    CSS
+                  </li>
                 </ul>
-                <div class="project-links">
-                  <a href="#" class="project-link">Live →</a>
-                  <a href="#" class="project-link">Code →</a>
+                <div class="flex gap-4">
+                  <a
+                    href="#"
+                    class="text-[13px] font-semibold text-[#6366f1] dark:text-[#818cf8] hover:text-[#4f46e5] dark:hover:text-[#a5b4fc] transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-[#6366f1] dark:focus-visible:outline-[#818cf8] focus-visible:rounded-[4px]"
+                    >Live →</a
+                  >
+                  <a
+                    href="#"
+                    class="text-[13px] font-semibold text-[#6366f1] dark:text-[#818cf8] hover:text-[#4f46e5] dark:hover:text-[#a5b4fc] transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-[#6366f1] dark:focus-visible:outline-[#818cf8] focus-visible:rounded-[4px]"
+                    >Code →</a
+                  >
                 </div>
               </div>
             </article>
 
-            <article class="project-card" data-category="tailwind">
-              <div class="project-cover project-cover--emerald">
-                <div class="project-cover-logo project-cover--white">
+            <article
+              class="w-full sm:w-[calc((100%_-_24px)/2)] lg:w-[calc((100%_-_48px)/3)] bg-white dark:bg-[#111a2e] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-[16px] overflow-hidden hover:-translate-y-1 hover:border-[#6366f1] dark:hover:border-[#818cf8] hover:shadow-[0_8px_24px_rgba(15,23,42,0.10)] dark:hover:shadow-[0_12px_32px_rgba(0,0,0,0.50)] transition-[transform,box-shadow,border-color] duration-200"
+              data-category="tailwind"
+            >
+              <div
+                class="h-[140px] flex items-center justify-center bg-[linear-gradient(135deg,#10b981,#14b8a6)]"
+              >
+                <div
+                  class="flex items-center justify-center rounded-full overflow-hidden bg-white"
+                >
                   <img
                     src="assets/imgs/dashboard.png"
                     alt="Dashboard UI"
-                    class="project-cover-img"
+                    class="w-[100px] h-[100px] object-cover"
                   />
                 </div>
               </div>
-              <div class="project-body">
-                <h3 class="project-title">Dashboard UI</h3>
-                <p class="project-desc">
+              <div class="p-5">
+                <h3 class="text-base font-bold mb-1.5">Dashboard UI</h3>
+                <p class="text-sm text-[#64748b] dark:text-[#94a3b8] mb-3">
                   A static analytics dashboard with a clean grid layout.
                 </p>
-                <ul class="project-tags">
-                  <li class="project-tag">Tailwind</li>
-                  <li class="project-tag">Grid</li>
+                <ul class="flex flex-wrap gap-1.5 mb-4">
+                  <li
+                    class="px-2.5 py-1 text-xs font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                  >
+                    Tailwind
+                  </li>
+                  <li
+                    class="px-2.5 py-1 text-xs font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                  >
+                    Grid
+                  </li>
                 </ul>
-                <div class="project-links">
-                  <a href="#" class="project-link">Live →</a>
-                  <a href="#" class="project-link">Code →</a>
+                <div class="flex gap-4">
+                  <a
+                    href="#"
+                    class="text-[13px] font-semibold text-[#6366f1] dark:text-[#818cf8] hover:text-[#4f46e5] dark:hover:text-[#a5b4fc] transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-[#6366f1] dark:focus-visible:outline-[#818cf8] focus-visible:rounded-[4px]"
+                    >Live →</a
+                  >
+                  <a
+                    href="#"
+                    class="text-[13px] font-semibold text-[#6366f1] dark:text-[#818cf8] hover:text-[#4f46e5] dark:hover:text-[#a5b4fc] transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-[#6366f1] dark:focus-visible:outline-[#818cf8] focus-visible:rounded-[4px]"
+                    >Code →</a
+                  >
                 </div>
               </div>
             </article>
 
-            <article class="project-card" data-category="html-css ui">
-              <div class="project-cover project-cover--amber">
-                <div class="project-cover-logo project-cover--white">
+            <article
+              class="w-full sm:w-[calc((100%_-_24px)/2)] lg:w-[calc((100%_-_48px)/3)] bg-white dark:bg-[#111a2e] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-[16px] overflow-hidden hover:-translate-y-1 hover:border-[#6366f1] dark:hover:border-[#818cf8] hover:shadow-[0_8px_24px_rgba(15,23,42,0.10)] dark:hover:shadow-[0_12px_32px_rgba(0,0,0,0.50)] transition-[transform,box-shadow,border-color] duration-200"
+              data-category="html-css ui"
+            >
+              <div
+                class="h-[140px] flex items-center justify-center bg-[linear-gradient(135deg,#f59e0b,#ef4444)]"
+              >
+                <div
+                  class="flex items-center justify-center rounded-full overflow-hidden bg-white"
+                >
                   <img
                     src="assets/imgs/blog.png"
                     alt="Maged Yaseen"
-                    class="project-cover-img"
+                    class="w-[100px] h-[100px] object-cover"
                   />
                 </div>
               </div>
-              <div class="project-body">
-                <h3 class="project-title">Blog Landing Page</h3>
-                <p class="project-desc">
+              <div class="p-5">
+                <h3 class="text-base font-bold mb-1.5">Blog Landing Page</h3>
+                <p class="text-sm text-[#64748b] dark:text-[#94a3b8] mb-3">
                   A minimal blog layout focused on typography.
                 </p>
-                <ul class="project-tags">
-                  <li class="project-tag">HTML</li>
-                  <li class="project-tag">CSS</li>
+                <ul class="flex flex-wrap gap-1.5 mb-4">
+                  <li
+                    class="px-2.5 py-1 text-xs font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                  >
+                    HTML
+                  </li>
+                  <li
+                    class="px-2.5 py-1 text-xs font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                  >
+                    CSS
+                  </li>
                 </ul>
-                <div class="project-links">
-                  <a href="#" class="project-link">Live →</a>
-                  <a href="#" class="project-link">Code →</a>
+                <div class="flex gap-4">
+                  <a
+                    href="#"
+                    class="text-[13px] font-semibold text-[#6366f1] dark:text-[#818cf8] hover:text-[#4f46e5] dark:hover:text-[#a5b4fc] transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-[#6366f1] dark:focus-visible:outline-[#818cf8] focus-visible:rounded-[4px]"
+                    >Live →</a
+                  >
+                  <a
+                    href="#"
+                    class="text-[13px] font-semibold text-[#6366f1] dark:text-[#818cf8] hover:text-[#4f46e5] dark:hover:text-[#a5b4fc] transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-[#6366f1] dark:focus-visible:outline-[#818cf8] focus-visible:rounded-[4px]"
+                    >Code →</a
+                  >
                 </div>
               </div>
             </article>
 
-            <article class="project-card" data-category="tailwind ui">
-              <div class="project-cover project-cover--emerald">
-                <div class="project-cover-logo project-cover--white">
+            <article
+              class="w-full sm:w-[calc((100%_-_24px)/2)] lg:w-[calc((100%_-_48px)/3)] bg-white dark:bg-[#111a2e] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-[16px] overflow-hidden hover:-translate-y-1 hover:border-[#6366f1] dark:hover:border-[#818cf8] hover:shadow-[0_8px_24px_rgba(15,23,42,0.10)] dark:hover:shadow-[0_12px_32px_rgba(0,0,0,0.50)] transition-[transform,box-shadow,border-color] duration-200"
+              data-category="tailwind ui"
+            >
+              <div
+                class="h-[140px] flex items-center justify-center bg-[linear-gradient(135deg,#10b981,#14b8a6)]"
+              >
+                <div
+                  class="flex items-center justify-center rounded-full overflow-hidden bg-white"
+                >
                   <img
                     src="assets/imgs/soon.png"
                     alt="Maged Yaseen"
-                    class="project-cover-img"
+                    class="w-[100px] h-[100px] object-cover"
                   />
                 </div>
               </div>
-              <div class="project-body">
-                <h3 class="project-title">Coming Soon Page</h3>
-                <p class="project-desc">
+              <div class="p-5">
+                <h3 class="text-base font-bold mb-1.5">Coming Soon Page</h3>
+                <p class="text-sm text-[#64748b] dark:text-[#94a3b8] mb-3">
                   A centered hero with a gradient background.
                 </p>
-                <ul class="project-tags">
-                  <li class="project-tag">Tailwind</li>
-                  <li class="project-tag">Flexbox</li>
+                <ul class="flex flex-wrap gap-1.5 mb-4">
+                  <li
+                    class="px-2.5 py-1 text-xs font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                  >
+                    Tailwind
+                  </li>
+                  <li
+                    class="px-2.5 py-1 text-xs font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                  >
+                    Flexbox
+                  </li>
                 </ul>
-                <div class="project-links">
-                  <a href="#" class="project-link">Live →</a>
-                  <a href="#" class="project-link">Code →</a>
+                <div class="flex gap-4">
+                  <a
+                    href="#"
+                    class="text-[13px] font-semibold text-[#6366f1] dark:text-[#818cf8] hover:text-[#4f46e5] dark:hover:text-[#a5b4fc] transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-[#6366f1] dark:focus-visible:outline-[#818cf8] focus-visible:rounded-[4px]"
+                    >Live →</a
+                  >
+                  <a
+                    href="#"
+                    class="text-[13px] font-semibold text-[#6366f1] dark:text-[#818cf8] hover:text-[#4f46e5] dark:hover:text-[#a5b4fc] transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-[#6366f1] dark:focus-visible:outline-[#818cf8] focus-visible:rounded-[4px]"
+                    >Code →</a
+                  >
                 </div>
               </div>
             </article>
 
-            <article class="project-card" data-category="html-css">
-              <div class="project-cover project-cover--indigo">
-                <div class="project-cover-logo project-cover--white">
+            <article
+              class="w-full sm:w-[calc((100%_-_24px)/2)] lg:w-[calc((100%_-_48px)/3)] bg-white dark:bg-[#111a2e] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-[16px] overflow-hidden hover:-translate-y-1 hover:border-[#6366f1] dark:hover:border-[#818cf8] hover:shadow-[0_8px_24px_rgba(15,23,42,0.10)] dark:hover:shadow-[0_12px_32px_rgba(0,0,0,0.50)] transition-[transform,box-shadow,border-color] duration-200"
+              data-category="html-css"
+            >
+              <div
+                class="h-[140px] flex items-center justify-center bg-[linear-gradient(135deg,#6366f1,#8b5cf6)]"
+              >
+                <div
+                  class="flex items-center justify-center rounded-full overflow-hidden bg-white"
+                >
                   <img
                     src="assets/imgs/cart.png"
                     alt="Maged Yaseen"
-                    class="project-cover-img"
+                    class="w-[100px] h-[100px] object-cover"
                   />
                 </div>
               </div>
-              <div class="project-body">
-                <h3 class="project-title">Product Card</h3>
-                <p class="project-desc">
+              <div class="p-5">
+                <h3 class="text-base font-bold mb-1.5">Product Card</h3>
+                <p class="text-sm text-[#64748b] dark:text-[#94a3b8] mb-3">
                   A reusable product card with hover states.
                 </p>
-                <ul class="project-tags">
-                  <li class="project-tag">HTML</li>
-                  <li class="project-tag">CSS</li>
+                <ul class="flex flex-wrap gap-1.5 mb-4">
+                  <li
+                    class="px-2.5 py-1 text-xs font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                  >
+                    HTML
+                  </li>
+                  <li
+                    class="px-2.5 py-1 text-xs font-medium bg-[#f8fafc] dark:bg-[#0b1220] border border-[#e2e8f0] dark:border-[#1f2a44] rounded-full"
+                  >
+                    CSS
+                  </li>
                 </ul>
-                <div class="project-links">
-                  <a href="#" class="project-link">Live →</a>
-                  <a href="#" class="project-link">Code →</a>
+                <div class="flex gap-4">
+                  <a
+                    href="#"
+                    class="text-[13px] font-semibold text-[#6366f1] dark:text-[#818cf8] hover:text-[#4f46e5] dark:hover:text-[#a5b4fc] transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-[#6366f1] dark:focus-visible:outline-[#818cf8] focus-visible:rounded-[4px]"
+                    >Live →</a
+                  >
+                  <a
+                    href="#"
+                    class="text-[13px] font-semibold text-[#6366f1] dark:text-[#818cf8] hover:text-[#4f46e5] dark:hover:text-[#a5b4fc] transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-[#6366f1] dark:focus-visible:outline-[#818cf8] focus-visible:rounded-[4px]"
+                    >Code →</a
+                  >
                 </div>
               </div>
             </article>
@@ -349,21 +602,29 @@
       </section>
 
       <!-- ================= CONTACT ================= -->
-      <section class="section" id="contact">
-        <div class="container contact-inner">
-          <h2 class="section-title">Let's build something</h2>
-          <p class="section-subtitle">
+      <section class="py-16" id="contact">
+        <div class="w-full max-w-[1080px] mx-auto px-6">
+          <h2 class="text-center text-2xl font-bold tracking-[-0.02em] mb-2">
+            Let's build something
+          </h2>
+          <p class="text-[#64748b] text-center dark:text-[#94a3b8] mb-8">
             Feel free to reach out — links only, no forms.
           </p>
 
-          <div class="contact-links">
-            <a href="mailto:magedyaseen@gmail.com" class="contact-link"
+          <div class="flex justify-center flex-wrap gap-3">
+            <a
+              href="mailto:magedyaseen@gmail.com"
+              class="inline-flex items-center gap-2 px-5 py-3 text-sm leading-[1.6] font-semibold rounded-full border border-[#e2e8f0] dark:border-[#1f2a44] bg-white dark:bg-[#111a2e] text-[#0f172a] dark:text-[#e5edf7] hover:text-[#6366f1] hover:border-[#6366f1] dark:hover:text-[#818cf8] dark:hover:border-[#818cf8] transition-colors duration-150"
               >✉️ Email</a
             >
-            <a href="https://github.com/magedyaseen" class="contact-link"
+            <a
+              href="https://github.com/magedyaseen"
+              class="inline-flex items-center gap-2 px-5 py-3 text-sm leading-[1.6] font-semibold rounded-full border border-[#e2e8f0] dark:border-[#1f2a44] bg-white dark:bg-[#111a2e] text-[#0f172a] dark:text-[#e5edf7] hover:text-[#6366f1] hover:border-[#6366f1] dark:hover:text-[#818cf8] dark:hover:border-[#818cf8] transition-colors duration-150"
               >🐙 GitHub</a
             >
-            <a href="https://linkedin.com/in/magedyaseen" class="contact-link"
+            <a
+              href="https://linkedin.com/in/magedyaseen"
+              class="inline-flex items-center gap-2 px-5 py-3 text-sm leading-[1.6] font-semibold rounded-full border border-[#e2e8f0] dark:border-[#1f2a44] bg-white dark:bg-[#111a2e] text-[#0f172a] dark:text-[#e5edf7] hover:text-[#6366f1] hover:border-[#6366f1] dark:hover:text-[#818cf8] dark:hover:border-[#818cf8] transition-colors duration-150"
               >💼 LinkedIn</a
             >
           </div>
@@ -372,12 +633,18 @@
     </main>
 
     <!-- ================= FOOTER ================= -->
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p class="footer-text">
+    <footer class="mt-8 py-8 border-t border-[#e2e8f0] dark:border-[#1f2a44]">
+      <div
+        class="w-full max-w-[1080px] mx-auto px-6 flex flex-col items-center gap-3 text-center md:flex-row md:justify-between md:text-left"
+      >
+        <p class="text-[13px] text-[#64748b] dark:text-[#94a3b8]">
           © 2026 Maged Yaseen. Built with HTML &amp; CSS.
         </p>
-        <a href="#top" class="footer-link">Back to top ↑</a>
+        <a
+          href="#top"
+          class="text-[13px] font-semibold text-[#6366f1] dark:text-[#818cf8]"
+          >Back to top ↑</a
+        >
       </div>
     </footer>
   </body>
